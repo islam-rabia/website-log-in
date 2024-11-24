@@ -3,36 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+
+        h3 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="sign-in">
-      <h3>Sign In</h3>
+    <h3>Welcome Sign In</h3>
 
-      <form action="">
-        <div class="email">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Enter The Email"
-            name="email"
-          />
-        </div>
+    <form>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
 
-        <div class="password">
-          <label for="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Enter The Password"
-            name="password"
-          />
-        </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
 
-        <input type="submit" value="Sign In" />
-      </form>
-    </div>
-    <script src="js/signIn.js"></script>
+      <input type="submit" value="Sign In" />
+    </form>
+
+    <script src="signIn.js"></script>
   </body>
 </html>

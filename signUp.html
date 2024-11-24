@@ -3,47 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+
+        h3 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="sign-up">
-      <h3>Sign Up</h3>
+    <h3>Welcome Sign Up</h3>
 
-      <form action="">
-        <div class="user-name">
-          <label for="user">User</label>
-          <input
-            id="user"
-            type="text"
-            placeholder="Enter The User Name"
-            name="user"
-          />
-        </div>
+    <form>
+      <div class="user">
+        <label for="user">User Name</label>
+        <input type="text" name="user" id="user" />
+      </div>
 
-        <div class="email">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Enter The Email"
-            name="email"
-          />
-        </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
 
-        <div class="password">
-          <label for="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Enter The Password"
-            name="password"
-          />
-        </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
 
-        <input type="submit" value="Sign Up" />
-      </form>
-    </div>
+      <div class="cPassword">
+        <label for="cPassword">Current Password</label>
+        <input type="password" name="cPassword" id="cPassword" />
+      </div>
 
-    <script src="js/signUp.js"></script>
+      <input type="submit" value="Sign Up" />
+    </form>
+
+    <script src="signUp.js"></script>
   </body>
 </html>
