@@ -25,3 +25,5 @@ function LogOut() {
     location.href = "signUp.html";
   });
 }
+
+let arr = [1, 2];
